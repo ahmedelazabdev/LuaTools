@@ -1,0 +1,38 @@
+# LuaTools — Online Lua Formatter, Minifier & Table Converter
+
+> A high-performance, client-side developer utility for formatting, minifying, compressing, and converting Lua code and JSON tables with zero server uploads and zero latency.
+
+## Project Overview
+
+- **Canonical URL**: https://ahmedelazabdev.github.io/LuaTools/
+- **Author**: Ahmed Elazab
+- **Primary Technology**: Native Client-Side JavaScript, Regular Expression Block Parsers, Web Streams
+- **Supported Lua Dialects**: Vanilla Lua (5.1, 5.2, 5.3, 5.4), LuaJIT, Roblox Luau, FiveM, Neovim, and OpenResty.
+
+## Core Capabilities & Developer Features
+
+1. **Lua Formatter / Beautifier**:
+   - Automatically indents functions, loops (`for`, `while`, `repeat`), conditionals (`if ... then ... else ... end`), and nested tables.
+   - Configurable indentation styles: 2-space, 4-space, or tabbed indentation.
+   - Preserves inline single-line statements and aligns table delimiters.
+
+2. **Production Lua Minifier**:
+   - Strips single-line (`--`) and multi-line block (`--[[ ... ]]`) comments safely.
+   - Collapses excessive whitespace and joins lines without breaking string literals or token syntax.
+   - Ideal for shrinking Roblox client-server remote payloads and memory-constrained IoT scripts (NodeMCU/ESP8266).
+
+3. **JSON ↔ Lua Table Converter**:
+   - Converts standard JSON structures into executable Lua table definitions.
+   - Properly translates JSON arrays into Lua 1-indexed tables and JSON objects into Lua key-value dictionaries.
+
+4. **Real-Time Code Telemetry**:
+   - Displays real-time metrics: line counts, input/output byte sizes, compression ratio (percentage savings), and execution latency in milliseconds.
+
+5. **Client-Side Privacy**:
+   - 100% in-browser memory execution. No game scripts, server logic, or sensitive configuration data are ever transmitted across network connections.
+
+## Technical Specifications & Performance
+
+- **Performance**: 100% Lighthouse score, zero external Google Fonts (using native system font stack), zero Cumulative Layout Shift (CLS = 0.000).
+- **Accessibility & Contrast**: Full WCAG AAA color contrast across the dark code editor (`#0f172a`), buttons, and badges, with sequentially descending heading hierarchy (`h1` → `h2` → `h3`).
+ 
